@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin:0 ;
+    font-family: Rubik, sans-serif;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+section#app{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: linear-gradient(0deg, #e0dfdf, #858282);
+}
+main#calc{
+    width: 40%;
+
+    background-color: #afaaaa;
+    filter: drop-shadow(10px 10px 10px rgb(46, 46, 46));
+
+    border-radius: 10px;
+}
+section#val{
+    width: calc(100% - margin);
+    margin: 20px;
+    padding: 0px 10px;
+    height: 60px;
+    background-color: #7c7b7b;
+
+    border-radius: 15px 0 0 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    font-size: 27px;
+}
+section#but{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin:20px;
+}
+section > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #6e6c6c;
+    margin: 10px;
+    padding: 20px;
+
+    font-size: 27px;
+
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 3px black);
+
+    cursor: pointer;
+    user-select: none;
+}
